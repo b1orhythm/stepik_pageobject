@@ -17,3 +17,5 @@ class ProductPageLocators():
     ADD_TO_BASKET_BTN = (By.CSS_SELECTOR, "#add_to_basket_form")
     MESSAGE_WITH_PRODUCT_TITLE = (By.XPATH, "//div[contains(@class, 'alert-success')]/div[@class='alertinner ']/strong")
     MESSAGE_WITH_PRICE_BASKET = (By.XPATH, "//div[contains(@class, 'alert-info')]/div[@class='alertinner ']/p/strong")
+    SUCCESS_MESSAGE = (By.XPATH, "//div/div[contains(@class, 'alert-success')][1]/div[@class='alertinner ']")
+
