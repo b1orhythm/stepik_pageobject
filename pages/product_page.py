@@ -16,7 +16,7 @@ class ProductPage(BasePage):
 
     def should_be_message_about_added_product(self):
         product_title = self.browser.find_element(*ProductPageLocators.PRODUCT_TITLE).text
-        assert product_title in self.browser.find_element(*ProductPageLocators.MESSAGE_WITH_PRODUCT_TITLE).text, "The name of the added product is different from the product name on the page"
+        assert product_title == self.browser.find_element(*ProductPageLocators.MESSAGE_WITH_PRODUCT_TITLE).text, "The name of the added product is different from the product name on the page"
 
     def should_be_same_price_in_basket(self):
         product_price = self.browser.find_element(*ProductPageLocators.PRODUCT_PRICE).text
